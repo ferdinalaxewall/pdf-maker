@@ -1,0 +1,36 @@
+:root {
+    --action-width: 50px;
+}
+
+#list-anak-wrapper {
+    display: flex;
+    flex-direction: column;
+    /* row-gap: 10px; */
+}
+
+.list-anak {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+    padding-top: 17.5px;
+    padding-bottom: 17.5px;
+}
+
+.list-anak:not(:last-child) {
+    border-bottom: 1px solid #eee;
+}
+
+.list-anak-input {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+    width: calc(100% - var(--action-width));
+}
+
+.list-anak-action {
+    width: var(--action-width);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
